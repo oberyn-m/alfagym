@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💪</text></svg>" />
+  <link rel="stylesheet" href="style.css">
+  <title>Alfa Gym</title>
+</head>
+
+<body>
+
+  <div class="barra-navegacao">
+    <a href="#" class="logo">A<b>G</b>.</a>
+    <div class="alternador" onclick="alternadorBarra();"></div>
+    <ol>
+      <li><a href="#inicio" onclick="alternadorBarra();">ínicio</a></li>
+      <li><a href="#sobre" onclick="alternadorBarra();">sobre</a></li>
+      <li><a href="#instrucoes" onclick="alternadorBarra();">instruções</a></li>
+      <li><a href="#treinadores" onclick="alternadorBarra();">treinadores</a></li>
+      <li><a href="#dieta" onclick="alternadorBarra();">dieta</a></li>
+      <li><a href="#contato" onclick="alternadorBarra();">contato</a></li>
+    </ol>
+  </div>
+
+  <section id="inicio" class="inicio visualizacao">
+    <div class="destaque">
+      <h3>Sinta o poder com</h3>
+      <h1>Alfa <b>Gym</b></h1>
+      <p class="linha">
+        Descubra o transformador poder do treinamento regular. Na Alfa Gym, proporcionamos um ambiente completo para sua evolução física e mental. Aumente sua resistência, ganhe força, melhore sua flexibilidade e construa um corpo mais saudável. Com nossos profissionais experientes e instalações modernas, você alcançará seus objetivos mais rápido. O treino não é apenas exercício - é um investimento em sua saúde, confiança e qualidade de vida.
+      </p>
+      <button class="entrar" onclick="document.getElementById('sobre').scrollIntoView({behavior: 'smooth'});">
+        Saiba Mais
+      </button>
+    </div>
+    <div class="foto-inicio"></div>
+  </section>
+
+  <section id="sobre" class="sobre visualizacao">
+    <div class="principal">
+      <h2><span>S</span>obre</h2>
+      <h6>Conheça a Academia Alfa Gym, seu destino para transformação e saúde</h6>
+    </div>
+    <div class="conteudo">
+      <div class="coluna">
+        <p><b>A</b> Academia Alfa Gym é dedicada a transformar vidas através do exercício físico e bem-estar holístico.</p>
+        <p>Com mais de uma década de expericancia, oferecemos programas personalizados para todos os níveis de condicionamento físico.</p>
+        <p>Nossa equipe de treinadores certificados trabalha incansavelmente para ajudar você a atingir seus objetivos.</p>
+        <p>Contamos com equipamentos de última geração, aulas diversificadas e um ambiente acolhedor que motiva seu progresso diário.</p>
+        <p>Na Alfa Gym, você não é apenas um membro - você faz parte de uma comunidade que se preocupa com seu sucesso e bem-estar.</p>
+      </div>
+      <div class="coluna">
+        <div class="caixa">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=550&fit=crop" alt="Academia Alfa Gym">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="instrucoes" class="instrucoes visualizacao">
+    <div class="principal">
+      <h2><span>I</span>nstruções</h2>
+      <h6>Conheça as técnicas corretas para maximizar seus resultados na academia</h6>
+    </div>
+
+    <div class="conteudo">
+
+      <div class="quadro">
+        <div class="caixa">
+          <img src="./images/workout1.jpg" alt="">
+        </div>
+        <div class="titulo">
+          Corrida na Esteira
+        </div>
+        <p>Comece com aquecimento de 5 minutos e aumente gradualmente a velocidade. Mantenha uma postura ereta e respire de forma constante para melhorar sua resistência cardiovascular.</p>
+      </div>
+
+      <div class="quadro">
+        <div class="caixa">
+          <img src="./images/workout2.jpg" alt="">
+        </div>
+        <div class="titulo">
+          Levantamento Terra
+        </div>
+        <p>Exercício fundamental que trabalha múltiplos grupos musculares. Manter as costas retas, dobrar os joelhos e puxar o peso com força controlada para ganhar força geral.</p>
+      </div>
+
+      <div class="quadro">
+        <div class="caixa">
+          <img src="./images/workout3.jpg" alt="">
+        </div>
+        <div class="titulo">
+          Agachamento
+        </div>
+        <p>Desça controladamente dobrando os joelhos, mantendo o peito erguido e o peso nos calcanhares. Agachamentos fortalecem pernas e glúteos, aumentando sua potência funcional.</p>
+      </div>
+
+      <div class="quadro">
+        <div class="caixa">
+          <img src="./images/workout4.jpg" alt="">
+        </div>
+        <div class="titulo">
+          Flexão com Alteres
+        </div>
+        <p>Segure alteres ao lado do corpo e flexione os cotovelos, subindo os pesos em movimento controlado. Excelente para fortalecer braços, ombros e tórax com resistência adicional.</p>
+      </div>
+
+      <div class="quadro">
+        <div class="caixa">
+          <img src="./images/workout5.jpg" alt="">
+        </div>
+        <div class="titulo">
+          Ondulação de Corda
+        </div>
+        <p>Segure as duas extremidades da corda e balance-a em movimentos ondulátórios. Exercício de cross-fit intenso que trabalha core, braços e melhora resistência, queimando muitas calorias.</p>
+      </div>
+
+      <div class="quadro">
+        <div class="caixa">
+          <img src="./images/workout6.jpg" alt="">
+        </div>
+        <div class="titulo">
+          Abdominal
+        </div>
+        <p>Deite-se e levante o tórax em direção aos joelhos, contraindo o abdômen. Trabalhe este exercício regularmente para desenvolver núcleo forte e definir seus músculos abdominais.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="treinadores" class="treinadores visualizacao">
+    <div class="principal">
+      <h2><span>T</span>reinadores</h2>
+      <h6>Conheça nossos profissionais certificados e especializados em suas áreas</h6>
+    </div>
+
+    <div class="conteudo">
+      <div class="quadro">
+        <div class="caixa">
+          <img src="./images/trainer1.jpg" alt="">
+        </div>
+        <div class="trainer-header">
+          <div class="trainer-name">Carlos - Treinador de Box</div>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20treinamentos%20de%20Box%20na%20Alfa%20Gym" target="_blank" class="trainer-whatsapp">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="trainer-description">
+          <p>Especialista em técnicas de combate com mais de 10 anos de experiência. Transformo cada sessão em desafio que impulsiona seus limites.</p>
+        </div>
+      </div>
+
+      <div class="quadro">
+        <div class="caixa">
+          <img src="./images/trainer2.jpg" alt="">
+        </div>
+        <div class="trainer-header">
+          <div class="trainer-name">Rafael - Treinador de Box</div>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20treinamentos%20de%20Box%20na%20Alfa%20Gym" target="_blank" class="trainer-whatsapp">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="trainer-description">
+          <p>Campeão de Box que prepara atletas para competições. Dedicado a forjar campeões dentro e fora do ringue.</p>
+        </div>
+      </div>
+
+      <div class="quadro">
+        <div class="caixa">
+          <img src="./images/trainer3.jpg" alt="">
+        </div>
+        <div class="trainer-header">
+          <div class="trainer-name">Lucas - Treinador de Fisioterapia</div>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20fisioterapia%20e%20recupera%C3%A7%C3%A3o%20na%20Alfa%20Gym" target="_blank" class="trainer-whatsapp">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="trainer-description">
+          <p>Fisioterapeuta certificado que previne lesões e acelera recuperação. Seu bem-estar integral é minha prioridade máxima.</p>
+        </div>
+      </div>
+
+      <div class="quadro">
+        <div class="caixa">
+          <img src="./images/trainer4.jpg" alt="">
+        </div>
+        <div class="trainer-header">
+          <div class="trainer-name">Felipe - Treinador de Musculação</div>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20muscula%C3%A7%C3%A3o%20e%20ganho%20de%20massa%20na%20Alfa%20Gym" target="_blank" class="trainer-whatsapp">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="trainer-description">
+          <p>Mestre em hipertrofia e ganho de massa muscular. Com metodologia comprovada, construo corpos de sonho com eficiência.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dieta" class="dieta visualizacao">
+    <div class="principal">
+      <h2><span>D</span>ieta</h2>
+      <h6>Nutrientes essenciais para potencializar seus ganhos e resultados na academia</h6>
+    </div>
+    <div class="conteudo">
+      <div class="linha">
+        <div class="coluna">
+          <div class="cabecalho">Frango Cozido</div>
+          <p>
+            O frango cozido é uma excelente fonte de proteína magra, essencial para a construção e reparação muscular após os treinos. Rica em aminoácidos, esta proteína de alta qualidade auxilia na recuperação muscular e ganho de massa magra. Além disso, é baixa em gorduras, sendo perfeita para quem busca definir o corpo mantendo a saúde. Incorpore frango cozido em suas refeições diárias para potencializar seus resultados na academia e melhorar sua composição corporal.
+          </p>
+        </div>
+        <div class="coluna">
+          <div class="caixas">
+            <img src="./images/diet1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="linha">
+        <div class="coluna">
+          <div class="cabecalho">Pão Com Salada</div>
+          <p>
+            Uma combinação nutritiva que oferece carboidratos complexos e fibras essenciais para manter níveis de energia durante o treino. O pão fornece energia rápida, enquanto a salada oferece vitaminas, minerais e antioxidantes para recuperação e saúde geral. Esta refeição equilibrada é ideal para o almoço de quem treina intensamente. Os nutrientes presentes ajudam a reduzir fadiga muscular e aceleram a recuperação pós-treino, mantendo você forte e saudável.
+          </p>
+        </div>
+        <div class="coluna">
+          <div class="caixas">
+            <img src="./images/diet2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="linha">
+        <div class="coluna">
+          <div class="cabecalho">Frutas Secas</div>
+          <p>
+            Frutas secas são densas em nutrientes, oferecendo energia concentrada, fibras e gorduras saudáveis que favorecem recuperação muscular. Ricas em antioxidantes, auxiliam na redução da inflação causada pelo exercísio intenso. São perfeitas como lanche entre refeições, fornecendo energia rápida para seus treinos. Incorporate frutas secas em sua dieta para aproveitar máximos ganhos nutricionais e melhorar significativamente sua performance física na academia.
+          </p>
+        </div>
+        <div class="coluna ">
+          <div class="caixas">
+            <img src="./images/diet3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="linha">
+        <div class="coluna">
+          <div class="cabecalho">Frutas Saudáveis</div>
+          <p>
+            Frutas frescas são fundamentais para qualquer dieta de quem treina, oferecendo vitaminas, minerais e hidratação essenciais. Bananas, maçãs e laranjas fornecem carboidratos naturais que recarregam suas energias e melhoram a recuperação. Ricas em antioxidantes, protegem suas células contra danos do exercísico intenso. Consumir frutas regularmente potencializa ganhos de músculo, acelera recuperação e contribui para uma saúde ótima e longevidade.
+          </p>
+        </div>
+        <div class="coluna">
+          <div class="caixas">
+            <img src="./images/diet4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="linha">
+        <div class="coluna">
+          <div class="cabecalho">Suco Fresco</div>
+          <p>
+            Sucos frescos fornecem energia imediata e hidratação vital para o desempenho durante treinos. Carregados de vitaminas e minerais, ajudam na recuperação pós-exercísio e reposioção de eletrólitos. São ideais para consumir após a academia, acelerando o processo de recuperação muscular e recompostura de energia. Incorporate sucos naturais em sua rotina para potencializar resultados, melhorar disposição e fortalecer seu sistema imunológico.
+          </p>
+        </div>
+        <div class="coluna">
+          <div class="caixas">
+            <img src="./images/diet5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="linha">
+        <div class="coluna">
+          <div class="cabecalho">Proteínas</div>
+          <p>
+            Proteínas são o pilar fundamental para quem treina, essenciais para construir e reparar músculo aps intensos exercícios. Elas fornecem aminoácidos que sintetizam novo tecido muscular, aumentando força e resistência. Fontes variádas como carnes magras, ovos e lácteos garantem todos os nutrientes necessários. Consumir proteínas adequadamente acelera recuperação, aumenta massa muscular, melhora disposição e garante resultados ótimos em seus treinos na academia.
+          </p>
+        </div>
+        <div class="coluna">
+          <div class="caixas">
+            <img src="./images/diet6.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contato" class="contato visualizacao">
+    <div class="principal">
+      <h2><span>C</span>ontato</h2>
+      <h6>Entre em contato conosco e esclareça todas as suas dúvidas sobre a Alfa Gym</h6>
+    </div>
+
+    <div class="conteudo">
+      <form id="formulario-contato" onsubmit="enviarEmail(event)">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="tel" id="numero" placeholder="Telefone (11 dígitos)" pattern="[0-9]{11}" title="Digite seu telefone com 11 dígitos (DDD + 9 + telefone). Exemplo: 73981050000" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="mensagem" placeholder="Escreva sua mensagem aqui!" rows="5" required></textarea>
+        <br>
+        <input type="submit" value="Enviar" class="btn">
+        <div id="feedback-message" style="display: none; margin-top: 15px; padding: 12px; border-radius: 4px; text-align: center; font-weight: 600;"></div>
+      </form>
+      <div class="bgimg"></div>
+    </div>
+  </section>
+
+  <section class="rodape">
+    &copy; copyright <a href="https://github.com/oberyn-m" target="_blank">ICM-Dev</a> <span id="year" style="color: #fff;"></span> | Todos os Direitos Reservados
+  </section>
+
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7ões%20sobre%20a%20Alfa%20Gym" target="_blank" class="whatsapp-flutuante">
+    <i class="fa fa-whatsapp"></i>
+  </a>
+
+  <!-- FormSubmit para envio de email -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

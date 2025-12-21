@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --prime: #FBBA00;
+}
+
+body{
+  background-color: #131b2b;
+}
+
+.barra-navegacao{
+  width: 100%;
+  display: flex;
+  position: 30px 120px;
+  background-color: transparent;
+  justify-content: space-between;
+  z-index: 1111;
+  transition: 0.5s ease;
+}
+
+.barra-navegacao.sticky{
+  padding: 6px 60px;
+  background: #0c1518;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.barra-navegacao.sticky .logo{
+  font-size: 2em;
+  color: var(--prime);
+}
+
+.barra-navegacao.sticky .logo B{
+  color: #fff;
+}
+
+.logo{
+  font-size: 2.8em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo B{
+  color: var(--prime);
+}
+
+ol{
+  display: flex;
+  margin: auto 0;
+}
+
+ol li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+ol li a{
+  font-size: 20px;;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+ol li a:hover{
+  color: var(--prime);
+}
+
+.visualizacao{
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+
+.inicio{
+  display: flex;
+  min-height: 120vh;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
+}
+
+.foto-inicio{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&h=1600&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.destaque{
+  width: 70%;
+  position: relative;
+  display: inline-block;
+  z-index: 11;
+}
+
+.destaque h3{
+  display: inline;
+  font-size: 2vw;
+  padding: 5px 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  border-left: 6px solid var(--prime);
+  color: #fff;
+}
+
+.destaque h1{
+  font-size: 9em;
+  text-align: center;
+  font-weight: normal;
+}
+
+.destaque b{
+  color: var(--prime);
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+.destaque .linha{
+  color: #fff;
+  font-size: 1.2vw;
+  text-align: center;
+  font-weight: normal;
+}
+
+.destaque .entrar{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 800;
+  padding: 5px 20px;
+  font-size: 1.5vw;
+  margin-top: 1.2em;
+  color: var(--prime);
+  border: 2px solid var(--prime);
+  border-radius: 50px;
+  background: transparent;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.destaque .entrar:hover{
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  background: var(--prime);
+}
+
+.principal{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.principal h2{
+  font-size: 2.5vw;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  display: inline-block; 
+}
+
+.principal h2:before{
+  position: absolute;
+  content: '';
+  background: var(--prime);
+  height: 3px;
+  width: 30%;
+  bottom: 0;
+  border-radius: 50px;
+}
+
+span{
+  color: var(--prime);
+}
+
+.principal h6{
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.conteudo{
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0 30px;
+  justify-content: center;
+}
+
+.sobre .conteudo .coluna{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px 70px;
+}
+
+.sobre .conteudo .coluna p b{
+  font-size: 20px;
+  margin-right: 2px;
+}
+
+.sobre .conteudo .coluna{
+  position: relative;
+  top: 20px;
+  color: #fff;
+  /* background: var(--prime); */
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.sobre .conteudo .coluna:hover{
+  color: #fff;
+  background: transparent;
+}
+
+.sobre .conteudo .coluna .caixa{
+  position: relative;
+  height: 550px;
+}
+
+.sobre .conteudo{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre .conteudo .coluna .caixa img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.instrucoes .conteudo{
+  flex-wrap: wrap;
+}
+
+.instrucoes .conteudo .quadro{
+  position: relative;
+  width: 350px;
+  padding: 20px;
+  margin: 10px;
+  background: #222;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+
+.instrucoes .conteudo .quadro .caixa{
+  position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: visible;
+}
+
+.instrucoes .conteudo .quadro .caixa img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: 0.2s ease-in;
+  border-radius: 8px;
+}
+
+.instrucoes .conteudo .quadro .caixa:hover img{
+  filter: brightness(100%);
+  transform: scale(1.08);
+  border-radius: 8px;
+}
+
+.instrucoes .conteudo .quadro .caixa .titulo{
+  color: var(--prime);
+  padding: 5px 0;
+}
+
+.instrucoes .conteudo .quadro p{
+  font-size: 0.8em;
+}
+
+.treinadores .conteudo{
+  flex-wrap: wrap;
+}
+
+.treinadores .conteudo .quadro{
+  position: relative;
+  width: 500px;
+  padding: 30px 30px 40px 30px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  background: #222;
+}
+
+.treinadores .conteudo .quadro .caixa{
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: visible;
+}
+
+.treinadores .conteudo .quadro .caixa img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: grayscale(1);
+  object-fit: cover;
+  transition: 0.2s ease-in;
+  border-radius: 8px;
+}
+
+.treinadores .conteudo .quadro .caixa:hover img{
+  filter: grayscale(0);
+  transform: scale(1.08);
+  border-radius: 8px;
+}
+
+.treinadores .conteudo .quadro .trainer-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 8px 0;
+  gap: 10px;
+}
+
+.treinadores .conteudo .quadro .trainer-name{
+  color: var(--prime);
+  font-size: 1.2em;
+  flex: 1;
+}
+
+.treinadores .conteudo .quadro .trainer-whatsapp{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.treinadores .conteudo .quadro .trainer-whatsapp:hover{
+  color: #fff;
+}
+
+.treinadores .conteudo .quadro .trainer-description{
+  margin-top: 10px;
+}
+
+.treinadores .conteudo .quadro .trainer-description p{
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.treinadores .conteudo .quadro a{
+  top: 20px;
+  color: var(--prime);
+  background: transparent;
+  padding: 5px 20px;
+  border: 1.5px solid var(--prime);
+  border-radius: 5px;
+  text-decoration: none;
+  position: relative;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+}
+
+.treinadores .conteudo .quadro a:hover{
+  color: #fff;
+  background: var(--prime);
+}
+
+.dieta .conteudo{
+  flex-direction: column;
+}
+
+.dieta .conteudo .linha{
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.dieta .conteudo .linha:nth-child(odd) .a{
+  order: 2;
+}
+
+.dieta .conteudo .linha .coluna{
+  position: relative;
+  width: 600px;
+  padding: 20px 50px;
+}
+
+.dieta .conteudo .linha .coluna .cabecalho{
+  font-size: 2em;
+  color: #ff8502;
+  text-transform: capitalize;
+}
+
+.dieta .conteudo .linha:nth-child(odd) .cabecalho{
+  color: #02a3ff;
+}
+
+.dieta .conteudo .linha .coluna .caixas{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.dieta .conteudo .linha .coluna .caixas img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.contato .conteudo{
+  min-height: 100vh;
+}
+
+.contato .conteudo form{
+  margin: auto 0;
+  width: 400px;
+  height: 580px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.contato .conteudo form input{
+  color: #222;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 1px solid #878787;
+  border-radius: 4px;
+  margin: 15px 0;
+  background: transparent;
+}
+
+.contato .conteudo form textarea{
+  width: 100%;
+  padding: 10px;
+  color: #222;
+  font-size: 18px;
+  border: 1px solid #878787;
+  border-radius: 4px;
+  margin: 15px 0;
+  background: transparent;
+}
+
+.contato .conteudo form input:focus,
+.contato .conteudo form textarea:focus{
+  border: 2px solid var(--prime);
+  transition: 0.1s ease;
+}
+
+.contato .conteudo form .btn{
+  letter-spacing: 1px;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  display: block;
+  color: var(--prime);
+  border-color: var(--prime);
+  border: 2px solid var(--prime);
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.contato .conteudo form .btn:hover{
+  background: var(--prime);
+  color: #fff;
+}
+
+.contato .conteudo .bgimg{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(./images/bgimg.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(20%);
+}
+
+.rodape{
+  text-transform: capitalize;
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  background: #222;
+  text-align: center;
+  font-size: 18px;
+}
+
+.rodape a{
+  color: var(--prime);
+  text-decoration: none;
+  margin: 0 2px;
+  font-weight: lighter;
+}
+
+.rodape a:hover{
+  color: #ffdb4d;
+}
+
+.whatsapp-flutuante{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: var(--prime);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.whatsapp-flutuante:hover{
+  background: #e6a800;
+  transform: scale(1.1);
+}
+
+.whatsapp-flutuante i{
+  color: #131b2b;
+  font-size: 1.8em;
+  line-height: 1;
+}
+
+@media screen and (max-width: 900px){
+  .barra-navegacao{
+    padding: 0 60px;
+  }
+
+  .barra-navegacao ol{
+    display: none;
+  }
+
+  .barra-navegacao ol.active{
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background: #222;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100% - 60px);
+    z-index: 1000;
+  }
+
+  .barra-navegacao ol.active li{
+    margin: 8px;
+  }
+
+  .barra-navegacao ol.active li a{
+    font-size: 25px;
+  }
+
+  .barra-navegacao .alternador{
+    height: 25px;
+    width: 25px;
+    margin: auto 0;
+    cursor: pointer;
+    background: url(./images/menubar.jpg);
+    background-size: 25px;
+    background-position: center;
+    filter: invert(1);
+    background-repeat: no-repeat;
+  }
+
+  .barra-navegacao .alternador.active{
+    background: url(./images/close.png);
+    background-size: 40px;
+    background-position: center;
+    cursor: pointer;
+    filter: invert(1);
+  }
+
+  .destaque h3{
+    font-size: 3vw;
+    padding: 5px 10px;
+    border-left: 3px solid var(--prime);
+  }
+
+  .destaque h1{
+    font-size: 16vw;
+  }
+
+  .destaque .entrar{
+    font-size: 1.8vw;
+    border: 1px solid var(--prime);
+  }
+
+  .principal h2{
+    font-size: 1.5rem;
+  }
+
+  .principal h6{
+    font-size: 10px;
+  }
+
+  .sobre .conteudo{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre .conteudo .coluna{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .sobre .conteudo .caixa{
+    width: 260px;
+    padding: 18px;
+  }
+
+  .instrucoes .conteudo .quadro{
+    width: 350px;
+    padding: 15px 15px 40px 15px;
+    margin: 10px 5px;
+  }
+  
+  .instrucoes .conteudo .quadro .caixa{
+    height: 200px;
+  }
+
+  .instrucoes .conteudo .quadro .caixa a{
+    border: 1.5px solid var(--prime);
+    padding: 3px 15px;
+  }
+
+  .dieta .conteudo .linha{
+    flex-direction: column;
+  }
+
+  .dieta .conteudo .linha .coluna{
+    width: 100%;
+  }
+
+  .dieta .conteudo .linha:nth-child(add) .a{
+    order: 0;
+  }
+
+  .dieta .conteudo .linha .coluna .cabecalho{
+    font-size: 1.5em;
+  }
+
+  .dieta .conteudo .linha .coluna p{
+    font-size: 13px;
+  }
+
+  .dieta .conteudo .linha .coluna .caixas{
+    width: 90%;
+    margin: auto;
+  }
+}
