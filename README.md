@@ -98,7 +98,7 @@ Edite `style.css`:
 }
 ```
 
-## � Licença
+## ⚖️ Licença
 
 Este projeto é de uso livre para a Academia Alfa Gym.
 
