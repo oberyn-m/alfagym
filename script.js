@@ -66,19 +66,31 @@ function enviarEmail(event) {
   });
 }
 
+// Função global para alternar barra de navegação
+window.alternadorBarra = function() {
+  const alternadorbarranavegacao = document.querySelector('.alternador');
+  const opcoes = document.querySelector('ol');
+  
+  console.log('alternadorBarra chamado', {alternadorbarranavegacao, opcoes});
+  
+  if (alternadorbarranavegacao && opcoes) {
+    alternadorbarranavegacao.classList.toggle("active");
+    opcoes.classList.toggle("active");
+    console.log('Classes alternadas com sucesso');
+  } else {
+    console.error('Elementos não encontrados na página');
+  }
+};
+
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('year').textContent = new Date().getFullYear();
   
   window.addEventListener('scroll', function(){
     const barranavegacao = document.querySelector('.barra-navegacao');
-    barranavegacao.classList.toggle("sticky", window.scrollY > 50);  
+    if (barranavegacao) {
+      barranavegacao.classList.toggle("sticky", window.scrollY > 50);
+    }
   });
   
-  const alternadorbarranavegacao = document.querySelector('.alternador');
-  const opcoes = document.querySelector('ol');
-  
-  window.alternadorBarra = function() {
-    alternadorbarranavegacao.classList.toggle("active");
-    opcoes.classList.toggle("active");
-  };
+  console.log('Script carregado com sucesso');
 });

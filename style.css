@@ -21,7 +21,8 @@ body{
 .barra-navegacao{
   width: 100%;
   display: flex;
-  position: 30px 120px;
+  position: relative;
+  padding: 30px 120px;
   background-color: transparent;
   justify-content: space-between;
   z-index: 1111;
@@ -169,7 +170,7 @@ ol li a:hover{
   position: relative;
   text-align: center;
   padding-top: 100px;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .principal h2:before{
@@ -238,6 +239,7 @@ span{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: row-reverse;
 }
 
 .sobre .conteudo .coluna .caixa img{
@@ -350,7 +352,7 @@ span{
   color: #fff;
   font-size: 1.5em;
   cursor: pointer;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background: none;
@@ -566,6 +568,7 @@ span{
 @media screen and (max-width: 900px){
   .barra-navegacao{
     padding: 0 60px;
+    position: relative;
   }
 
   .barra-navegacao ol{
@@ -575,15 +578,18 @@ span{
   .barra-navegacao ol.active{
     top: 60px;
     left: 0;
+    right: 0;
     width: 100%;
-    display: flex;
+    display: flex !important;
     position: fixed;
     background: #222;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(100% - 60px);
-    z-index: 1000;
+    height: 100vh;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
   }
 
   .barra-navegacao ol.active li{
@@ -624,17 +630,21 @@ span{
     font-size: 16vw;
   }
 
+  .destaque .linha{
+    font-size: 14px;
+  }
+
   .destaque .entrar{
-    font-size: 1.8vw;
+    font-size: 14px;
     border: 1px solid var(--prime);
   }
 
   .principal h2{
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   .principal h6{
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .sobre .conteudo{
