@@ -661,6 +661,7 @@ span{
   .sobre .conteudo .caixa{
     width: 260px;
     padding: 18px;
+    margin: 0 auto;
   }
 
   .instrucoes .conteudo .quadro{
