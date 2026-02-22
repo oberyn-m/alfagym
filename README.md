@@ -98,14 +98,10 @@ Edite `style.css`:
 }
 ```
 
-## ⚖️ Licença
-
-Este projeto é de uso livre para a Academia Alfa Gym.
-
 ## 👥 Autor
 
-Desenvolvido por [Isaac Matos](https://github.com/oberyn-m) com ❤️ para Alfa Gym
+Desenvolvido com ❤️ por [Isaac Matos](https://github.com/oberyn-m).
 
 ---
 
-**Última atualização:** 21 de dezembro de 2025
+**Última atualização:** 22 de fevereiro de 2026
